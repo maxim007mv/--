@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психология</title>
+</head>
+<meta charset="utf-8">
+    <title>Панель навигации в HTML5</title>
+    <style>
+        ul.nav{
+            margin-left: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+        ul.nav a {
+            display: block;
+            width: 7em;
+            padding:10px;
+            background-color: #f4f4f4;
+            border-top: 1px dashed #333;
+            border-right: 1px dashed #333;
+            border-left: 5px solid #333;
+            text-decoration: none;
+            color: #333;
+        }
+        ul.nav li:last-child a {
+            border-bottom: 1px dashed #333;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#222">Главная</a></li>
+        <li><a href="#444">Прогресс</a></li>
+        <li><a href="#333">Контакты</a></li>
+    </ul>
+</body>
+<h1>
+    <p align=center>Психология</p>
+</h1>
+
+<h2> <p id="222"
+    <font color=purple>Введение:</font>
+</h2>
+<details>Проект будет о психологие.Этот проект поможет людям в трудную минуту.Когда им будет нужна помощь.</details></h3>
+<section>
+
+<h2>
+    <font color=purple>На чем основывается проект:</font>
+</h2>
+<details>Этот сайт будет предназначен для людей у которых в данный периуд есть какие либо сложности.На этом сайте будет 4
+    части:проблемы,стресс,отношение,манипуляция.После того как вы выбрали что вам нужно,вы переходите на новую старничку
+    и там уже будут советы цитаты и техники как от этого избавиться.</details></h3>
+<section>
+
+<h2>
+    <p align=center>Для чего он нужен</p>
+</h2>
+<li>
+    <h3>
+        <font color=Orange>Помогать людям
+    </h3>
+    </font>
+</li>
+<li>
+    <h3>
+        <font color=Orange>Быть удобным
+    </h3>
+    </font>
+</li>
+<li>
+    <h3>
+        <font color=Orange>Так же быть комфортным для использования
+    </h3>
+    </font>
+</li>
+
+<h2>
+    <font color=blue>Как его теперь мне делать?</font>
+</h2>
+<em>
+    <h3>Для проекта мне потребуеться JavaScript,HTML,CSS.Так же потребуеться немного пострадать и не поспать несолько
+        дней.</h3>
+</em>
+
+ <h2 id="444">Прогресс:</h2> 
+
+<style>
+    table {
+        width: 70%;
+        /* Ширина таблицы */
+        background: rgb(255, 255, 255);
+        /* Цвет фона таблицы */
+        color: white;
+        /* Цвет текста */
+        border-spacing: 1px;
+        /* Расстояние между ячейками */
+    }
+
+    td,
+    th {
+        background: rgb(0, 128, 90);
+        /* Цвет фона ячеек */
+        padding: 5px;
+        /* Поля вокруг текста */
+    }
+</style>
+</head>
+
+<body>
+    <table>
+        <tr> 
+            <th>начало</th>
+            <th>на данный момент</th>
+        </tr>
+        <tr>
+            <td>Идея сайта</td>
+            <td>100%</td>
+        </tr>
+        <tr>
+            <td>Стили и цитаты</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>Цвета проекта</td>
+            <td>70%</td>
+        </tr>
+        <tr>
+            <td>Стили</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>Цитаты</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>В общем</td>
+            <td>30-55%</td>
+        </tr>
+
+    </table>
+   <h2>Контакты</h2> <p id="333"
+    <form class="flex flex-col shadow divide-y divide-gray-300 rounded-xl w-full lg:w-96">
+        <input required="" placeholder="Имя" name="name" type="text" class="rounded-t-xl bg-gray-200 py-2 px-3">
+        <div class="grid grid-cols-2 divide-x divide-gray-300">
+            <div class="py-2 px-3 bg-gray-200">
+                <input checked="" onclick="$('#email').removeClass('hidden');$('#phone').addClass('hidden')"
+                    type="radio" id="contactr1" name="contacttype" value="email">
+                <label for="contactr1">Почта</label>
+            </div>
+            <div class="py-2 px-3 bg-gray-200">
+                <input onclick="$('#email').addClass('hidden');$('#phone').removeClass('hidden')" type="radio"
+                    id="contactr2" name="contacttype" value="phone">
+                <label for="contactr2">Телефон</label>
+            </div>
+        </div>
+        <input placeholder="Почта" id="email" name="email" type="email" class="bg-gray-200 py-2 px-3">
+        <input placeholder="Телефон" id="phone" name="phone" type="number" class="bg-gray-200 py-2 px-3 hidden">
+        <input placeholder="Возраст" id="age" name="age" type="number" class="bg-gray-200 py-2 px-3">
+        <select name="sex" class="bg-gray-200 py-2 px-3">
+            <option selected="" disabled="">Выберите пол</option>
+            <option>Мужской</option>
+            <option>Женский</option>
+            <option>Транс</option>
+        </select>
+        <textarea required="" placeholder="О себе" name="message" type="text"
+            class="bg-gray-200 py-2 px-3 max-h-32"></textarea>
+        <div class="grid grid-cols-2 divide-x divide-gray-300 rounded-b-xl overflow-hidden">
+            <button type="reset"
+                class="py-2 px-3 bg-gray-200 hover:bg-gray-400 focus:bg-gray-300 duration-300">Отменить</button>
+            <button type="submit"
+                class="py-2 px-3 bg-gray-200 hover:bg-gray-400 focus:bg-gray-300 duration-300">Отправить</button>
+        </div>
+    </form>
+
+    <a href="https://vk.com/unique.milky">
+        <li>
+            <font color=orange size=5>VK</font>
+        </li>
+    </a>
+    <a href="https://web.telegram.org/z/">
+        <li>
+            <font color=orange size=5>Telegram</font>
+        </li>
+    </a>
+
+   
+
+
+    <body>
+
+</html>
+
+</body>
+
+</html>
